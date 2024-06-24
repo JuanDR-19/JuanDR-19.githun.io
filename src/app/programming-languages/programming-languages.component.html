@@ -1,0 +1,29 @@
+<div class="mt-5">
+    <div class="row">
+      <div class="col-md-4 text-center mb-4" *ngFor="let pl of pl">
+        <img [src]="pl.image" alt="{{pl.name}}" class="img-fluid"
+             style="width: 100px; height: 100px; object-fit: cover;">
+        <h3>{{pl.name}}</h3>
+        <p>{{pl.experience}}</p>
+      </div>
+    </div>
+    <hr>
+    <h2><strong>Frameworks</strong> and <strong>Databases</strong></h2>
+    <ul class="list-group w-50 mx-auto">
+      <li class="list-group-item d-flex justify-content-between align-items-center" *ngFor="let db of db; let i = index">
+        <div class="d-inline-flex align-items-center justify-content-center text-white rounded m-1 me-2"
+             [ngStyle]="{'width': '40px', 'height': '40px' }">
+          <img [src]="db.image" alt="{{db.name}}" class="img-fluid">
+        </div>
+        {{ db.name }}
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-center" *ngFor="let fw of fm; let i = index">
+        <div class="d-inline-flex align-items-center justify-content-center text-white rounded m-1 me-2"
+             [ngStyle]="{ 'width': '40px', 'height': '40px' }">
+          <img [src]="fw.image" alt="{{fw.name}}" class="img-fluid">
+        </div>
+        {{ fw.name }}
+      </li>
+    </ul>      
+  </div>
+  

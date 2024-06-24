@@ -1,0 +1,56 @@
+<div class="container mt-5">
+    <div class="text-center mb-4">
+        <img src="assets/yo.png" alt="Juan Manuel Durán Rueda" class="rounded-circle img-fluid"
+            style="width: 150px; height: 150px; object-fit: cover;">
+    </div>
+    <div class="text-center">
+        <h1 class="display-3 text-center"><em><strong>About</strong><small class="text-muted"> me</small> </em></h1>
+        <p class="text-justify">
+            A final-year Systems Engineering student at the Pontificia Universidad Javeriana in Bogotá, Colombia, with
+            extensive experience in software development and technology project management. Passionate about innovation
+            and technology, I am always seeking new challenges to drive development and efficiency in the tech industry.
+            I have a strong enthusiasm for artificial intelligence and the development of innovative applications.
+            Additionally, I have experience in creating websites, web services, and applications. On a more personal
+            note, I have been a barista for 2 years and am a practitioner of Kenjutsu, forming the three main pillars of
+            my life: programming, Kenjutsu, and coffee.
+        </p>
+        <hr>
+        <div class="contact-info">
+            <p class="text-justify"><strong>Teléfono:</strong> +57 300 596 3474</p>
+            <p class="text-justify"><strong>Correo:</strong> <a
+                    href="mailto:juanmanuelduranrueda@gmail.com">juanmanuelduranrueda@gmail.com</a>
+            </p>
+        </div>
+    </div>
+    <hr>
+    <div class="mt-5">
+        <h2><em>Languages</em></h2>
+        <div class="row">
+            <div class="col-md-4 text-center mb-4" *ngFor="let language of lang">
+                <img [src]="language.image" alt="{{language.name}}" class="img-fluid"
+                    style="width: 100px; height: 100px; object-fit: cover;">
+                <h3>{{language.name}}</h3>
+                <p>{{language.experience}}</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="text-center">
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/http.juan_duran/" target="_blank">
+            <i class="fab fa-instagram fa-2x" style="color: #ac2bac; padding-right: 20px;"></i>
+        </a>
+        <!-- Linkedin -->
+        <a href="https://www.linkedin.com/in/juan-manuel-duran-rueda-ba2602245/" target="_blank">
+            <i class="fab fa-linkedin-in fa-2x" style="color: #0082ca; padding-right: 20px;"></i>
+        </a>
+        <!-- Github -->
+        <a href="https://github.com/JuanDR-19" target="_blank">
+            <i class="fab fa-github fa-2x" style="color: #333333; padding-right: 20px;"></i>
+        </a>
+        <a href="https://www.reddit.com/user/OwlGuardian_/" target="_blank">
+            <!-- Reddit -->
+            <i class="fab fa-reddit-alien fa-2x" style="color: #ff4500; padding-right: 20px;"></i>
+        </a>
+    </div>
+</div>
